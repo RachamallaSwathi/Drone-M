@@ -1,4 +1,10 @@
-import React from 'react' 
+import React from 'react'
+import {
+    faFacebook,
+    faInstagram,
+    faYoutube,
+    faLinkedin
+    } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
     return (
