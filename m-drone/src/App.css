@@ -1,0 +1,386 @@
+:root {
+    --primary-Color : rgb(91,176,29);
+    --body-color : rgb(243,243,243);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* flex */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-center{
+    align-items: center();
+}
+.justify-between{
+    justify-content: space-between;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-22{
+    flex: 0 1 22%;
+}
+.flex-17{
+    flex: 0 1 17%;
+}
+.column{
+    flex-direction: column;
+}
+
+/* margin-padding */
+
+.p-half {
+    padding: 0.5rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+
+/* headings */
+
+.primary-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-Color);
+}
+.sub-heading {
+    font-size: 2rem;
+    color: var(--primary-Color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.heading-para {
+    margin: 0.5rem 15%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(72, 67, 67);
+}
+
+
+/* common css */
+ body {
+     background-color: var(--body-color);
+ }
+a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+    padding: 32px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.zero-auto{
+    margin:  auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.width-full {
+    width: 100%;
+}
+
+.color-red {
+    color: red;
+}
+.color-primary {
+    color: var(--primary-Color);
+}
+
+main .active {
+    background-color: var(--primary-Color);
+}
+/* buttons */
+.btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 7px;
+    font-weight: 900;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    background-color: var(--primary-Color);
+}
+.hidden {
+    overflow: scroll;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* social media */
+.social-media{
+    font-size: 2rem;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--primary-Color);
+    padding: 0.7rem 1rem;
+    top: 40%;
+    right: 0;
+    border-radius: 1.2rem 0 0 1.2rem;
+}
+.social-media a{
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* nav-bar */
+.brand {
+   font-size: 2rem;
+   font-weight: 900;
+    color: rgb(13, 137, 83);
+
+}
+.brand::before {
+    content: "M";
+}
+
+
+.nav-bar a{
+    color: green;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+/* hero */
+.hero {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+}
+
+/* data-display */
+.data-display{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 2rem auto;
+    padding: 1rem;
+
+}
+.data-display h6 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* basic info */
+
+
+.basic-info div{
+   background-color: var(--primary-Color);
+}
+.basic-info span{
+    padding: 1rem;
+ }
+
+ /* drone-info */
+ .drone-info p{
+     font-size: 1.5rem;
+     color: rgb(45, 99, 45);
+ }
+ .drone-info .btn {
+     margin-bottom: 0.7rem;
+ }
+
+ /* product */
+
+ .product {
+     height: 18rem;
+     border: 2px solid var(--primary-Color);
+     outline: 12px solid white;
+     min-width: 18%;
+     padding: 5px;
+     margin: 2rem;
+     background-color: white;
+     box-shadow: 0px 10px 12px 10px rgb(148, 146, 146);
+ }
+ .product img{
+     color : green;
+     font-weight :900;
+     font-size: 2.5rem;
+     text-align: center;
+
+ }
+ 
+
+ .dot {
+     width: 20px;
+     height: 20px;
+     background-color: rgb(177, 174, 174);
+     margin: 1rem;
+     border-radius: 50%;
+ }
+
+
+ .underline-heading{
+     width: 50%;
+     margin: 1rem auto;
+     height: 2px;
+     background-color: gray;
+ }
+ 
+
+ /* NEWS */
+ .news {
+    height: 12rem;
+    border: 2px solid var(--primary-Color);
+    min-width: 17%;
+    margin: 1rem;
+    background-color: white;
+}
+/* testimonials */
+.testimonials {
+    border: 2px solid var(--primary-Color);
+    outline: 12px solid white;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: white;
+    box-shadow: 0px 10px 12px 10px rgb(148, 146, 146);
+}
+.testimonials p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.client-pic {
+    min-width: 11rem;
+    margin: 0 3rem 0 0 ;
+    height: 11rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px 5px rgb(170, 167, 167);
+}
+
+/* client */
+.client {
+    height: 12rem;
+    border: 2px solid var(--primary-Color);
+    min-width: 17%;
+    margin: 1rem;
+    background-color: white;
+}
+
+/* contact-form */
+.wrap {
+    flex-wrap: wrap;
+}
+.contact-form input {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    flex: 0 1 27%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-form textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+/* footer */
+footer{
+    background-color: var(--primary-Color);
+}
+
+footer a {
+    font-size: 1.5rem;
+    color: white;
+}
+footer h4{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 5.5rem 0 1rem 0;
+    color: white;
+}
+footer input{
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    flex-direction: 0 1 50%;
+    min-width: 50%;
+    
+}
+
+footer button {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: var(--primary-Color);
+    border: none;
+    margin-left:-110px ;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+   
+    .header nav a,.header nav li{
+      font-size: 1.3rem;
+      margin-top: .5rem;
+    }
+}
